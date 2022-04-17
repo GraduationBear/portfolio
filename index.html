@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link href="style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+
 </head>
 <body>
     <div class="nav-bar">
         <ul>
-            <li><a href="#">Porfolio</a></li>
-            <li><a>Moi</a></li>
-            <li><a>Formation</a></li>
-            <li><a>Expériences</a></li>
+            <li><a>Porfolio</a></li>
+            <li><a href="#moi">Moi</a></li>
+            <li><a href="#one">Formation</a></li>
+            <li><a href="#two">Expériences</a></li>
             <li><a>Me contacter</a></li>
         </ul>
     </div>
-    <div class="moi">
+    <div id="moi">
+
         <div class="nom">
             <h1>Maxime Miquel</h1>
         </div>
@@ -27,7 +31,11 @@
                 Bonne visite !</p>
         </div>
     </div>
-    <div class="formation">
+    <div id="one" class="titlesec">
+        <h1>FORMATION</h1>
+    </div>
+    <div id="formation">
+
         <div class="bac">
             <p><span class="year">2018</span><br>
                 <span class="libelle">Baccalauréat scientifique : science de l'ingénieur</span><br>
@@ -60,7 +68,28 @@
             </div>
         </div>
         <div class="dutexp">
-            <p class="text">Coucou</p>
+            <p class="text">Aprés mes quelques projets python en prépa, j'ai très vite pris goût à la programmation.
+            Le DUT Informatique m'as appris les fondamentaux de ce domaine, et m'as permi d'approfondir dans les
+            langages orientés objets et en réseau.</p>
+        </div>
+    </div>
+    <div id="two" class="titlesec">
+        <h1>EXPERIENCES</h1>
+    </div>
+    <div id="experience">
+        <div id="xp">
+            <div class="anim">
+                <p>Animateur saisonnier</p>
+            </div>
+            <div class="enac" >
+                <p>Stage développeur .NET Blazor</p>
+            </div>
+        </div>
+        <div class="expl" id="textanim">
+            <p>rehgefpohkjertpbgjneroifkpzd^^eorgfjn vd,lckgvdf,bdfbdnfobjndfjbondfobpijgpqk,fmq</p>
+        </div>
+        <div class="expl" id="textenac">
+            <p>ENACazeazrghrerhbdfpbkodfb,bngd,pbgbbc</p>
         </div>
     </div>
 
