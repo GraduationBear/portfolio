@@ -187,17 +187,21 @@ html{
 
     background-size: cover;
     grid-area: 1 / 1 / 2 / 2;
+    cursor: pointer;
 }
 .anim:hover{
     -ms-transform: scale(0.96); /* IE 9 */
     -webkit-transform: scale(0.96); /* Safari 3-8 */
     transform: scale(0.96);
+    transition: 0.5s cubic-bezier(.5,0,0,1);
 }
 
 .enac:hover{
     -ms-transform: scale(0.96); /* IE 9 */
     -webkit-transform: scale(0.96); /* Safari 3-8 */
     transform: scale(0.96);
+    transition: .5s cubic-bezier(.5,0,0,1);
+
 }
 .enac{
     transition: transform 0.8s;
@@ -209,6 +213,7 @@ html{
     background-size: cover;
     background-color: hotpink;
     grid-area: 1 / 2 / 2 / 3;
+    cursor: pointer;
 }
 
 .expl{
@@ -217,10 +222,41 @@ html{
     margin-left: auto;
     margin-right: auto;
     width: 70%;
-    font-size: 17px;
+    font-size: 20px;
+    text-align: justify;
 }
 
 #experience{
     margin-bottom: 5000px;
 }
 
+[class*="reveal-"]{
+    opacity: 0;
+    transform: translateY(-30px);
+}
+
+.reveal-visible{
+    opacity: 1;
+    transform: translateY(0);
+    transition: 1s cubic-bezier(.5,0,0,1);
+}
+
+.reveal-2{
+    transition-delay: .1s;
+}
+
+.reveal-3{
+    transition-delay: .2s;
+}
+
+.reveal-4{
+    transition-delay: .3s;
+}
+
+.reveal-5{
+    transition-delay: .4s;
+}
+
+.reveal-6{
+    transition-delay: .5s;
+}

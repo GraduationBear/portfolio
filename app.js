@@ -1,16 +1,4 @@
 $(document).ready(function (){
-    var intro=$(".intro")
-    var nom=$(".nom")
-    nom.css("opacity", "0")
-    intro.css("opacity","0")
-    nom.animate({opacity: 1},800,function (){
-        intro.animate({opacity: 1},800)
-    })
-
-
-
-
-
 
     //PARTIE EXPERIENCES//
 
@@ -40,4 +28,25 @@ $(document).ready(function (){
         }
     })
 
+
+    const ratio = .1
+    const options = {
+        root : null,
+        rootMargin : '0px',
+        threshold: ratio
+    }
+    const handleIntersect = function (entries,observer){
+        entries.forEach(function(entry) {
+            if (entry.intersectionRatio > ratio) {
+                entry.target.classList.add('reveal-visible')
+                observer.unobserve(entry.target)
+            }
+        })
+    }
+    const observer = new IntersectionObserver(handleIntersect, options);
+
+    document.querySelectorAll('[class*="reveal-"]').forEach(function(r){
+        observer.observe(r)
+    })
 })
+
