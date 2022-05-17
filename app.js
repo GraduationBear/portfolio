@@ -1,5 +1,15 @@
 $(document).ready(function (){
+    const burger = document.querySelector(".burger");
+    const navmenu = document.querySelector(".nav-menu");
 
+    burger.addEventListener("click",function (){
+        burger.classList.toggle("active");
+        navmenu.classList.toggle("active");
+    })
+    document.querySelectorAll(".nav-menu li").forEach(n=> n.addEventListener("click",()=>{
+        burger.classList.remove("active");
+        navmenu.classList.remove("active");
+    }))
     //PARTIE EXPERIENCES//
 
     var tuileenac=$(".enac")

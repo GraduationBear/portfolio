@@ -9,73 +9,78 @@
 
 </head>
 <body>
-    <div class="nav-bar">
-        <ul>
-            <li><a>Porfolio</a></li>
+<header>
+    <nav class="nav-bar">
+        <a class="titre">Porfolio</a>
+        <ul class="nav-menu">
+
             <li><a href="#moi">Moi</a></li>
-            <li><a href="#one">Formation</a></li>
+            <li><a href="#etudes">Formation</a></li>
             <li><a href="#two">Expériences</a></li>
             <li><a>Me contacter</a></li>
+
         </ul>
-    </div>
-    <div id="moi">
-
-        <div class="nom reveal-">
-            <h1>Maxime Miquel</h1>
+        <div class="burger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
         </div>
+    </nav>
+</header>
+<main>
+    <div id="moi">
+        <h1 class="reveal-">Maxime Miquel</h1>
         <div class="intro reveal-2" >
-
             <p align="justify">Bienvenue sur mon portfolio. Je suis étudiant en informatique
                 à Toulouse, ce site est un travail que j'ai réalisé en autodidacte.
                 Vous y trouverez des informations sur mes réalisations, mes études et mes projets.
                 Bonne visite !</p>
         </div>
     </div>
-    <div id="one" class="titlesec reveal-2">
-        <h1>FORMATION</h1>
+    <div id="etudes">
+        <h1 class="titlesec reveal-1">MES ETUDES</h1>
+        <div id="formation">
+            <div class="bac reveal-2">
+                <p><span class="year reveal-2">2018</span><br>
+                    <span class="libelle reveal-2">Baccalauréat scientifique : science de l'ingénieur</span><br>
+                    <span class="lieu reveal-2">Lycée Jean Baylet - Valence d'Agen</span>
+                </p>
+                <div class="point reveal-2">
+                </div>
+            </div>
+            <div class="bacexp reveal-3">
+                <p class="text">Le baccalauréat, un diplôme m'ayant donné les bases indispensables pour un bon informaticien. C'est en
+                    science de l'ingénieur que je découvre pour la première fois la programmation avec l'Arduino.</p>
+            </div>
+            <div class="prep reveal-4">
+                <p><span class="year reveal-4">2018 <span class="et">à</span> 2020</span><br>
+                    <span class="libelle reveal-4">Cycle universitaire préparatoire aux grandes écoles</span><br>
+                    <span class="lieu reveal-4">Université Paul Sabatier - Toulouse</span></p>
+                <div class="point reveal-4">
+                </div>
+            </div>
+            <div class="prepexp reveal-5">
+                <p class="text">Durant mes deux premières années universitaire, j'ai voulu approfondir mes connaissances
+                    scientifique. Ma curiositée a été comblée en mathématiques, physique, éléctromagnétisme mais aussi en informatique.</p>
+            </div>
+            <div class="dut reveal-6">
+                <p><span class="year reveal-6">2020 à 2022</span><br>
+                    <span class="libelle reveal-6">Diplôme universitaire de technologie Informatique</span><br>
+                    <span class="lieu reveal-6">Institut universitaire de technologie Paul Sabatier - Toulouse</span></p>
+                <div class="point reveal-6">
+                </div>
+            </div>
+            <div class="dutexp reveal-7">
+                <p class="text">Aprés mes quelques projets python en prépa, j'ai très vite pris goût à la programmation.
+                    Le DUT Informatique m'as appris les fondamentaux de ce domaine, et m'as permi d'approfondir dans les
+                    langages orientés objets et en réseau.</p>
+            </div>
+        </div>
     </div>
-    <div id="formation">
 
-        <div class="bac reveal-2">
-            <p><span class="year reveal-2">2018</span><br>
-                <span class="libelle reveal-2">Baccalauréat scientifique : science de l'ingénieur</span><br>
-                <span class="lieu reveal-2">Lycée Jean Baylet - Valence d'Agen</span>
-            </p>
-            <div class="point reveal-2">
-            </div>
-        </div>
-        <div class="bacexp reveal-3">
-            <p class="text">Le baccalauréat, un diplôme m'ayant donné les bases indispensables pour un bon informaticien. C'est en
-            science de l'ingénieur que je découvre pour la première fois la programmation avec l'Arduino.</p>
-        </div>
-        <div class="prep reveal-4">
-            <p><span class="year reveal-4">2018 <span class="et">à</span> 2020</span><br>
-                <span class="libelle reveal-4">Cycle universitaire préparatoire aux grandes écoles</span><br>
-                <span class="lieu reveal-4">Université Paul Sabatier - Toulouse</span></p>
-            <div class="point reveal-4">
-            </div>
-        </div>
-        <div class="prepexp reveal-5">
-            <p class="text">Durant mes deux premières années universitaire, j'ai voulu approfondir mes connaissances
-            scientifique. Ma curiositée a été comblée en mathématiques, physique, éléctromagnétisme mais aussi en informatique.</p>
-        </div>
-        <div class="dut reveal-6">
-            <p><span class="year reveal-6">2020 à 2022</span><br>
-                <span class="libelle reveal-6">Diplôme universitaire de technologie Informatique</span><br>
-                <span class="lieu reveal-6">Institut universitaire de technologie Paul Sabatier - Toulouse</span></p>
-            <div class="point reveal-6">
-            </div>
-        </div>
-        <div class="dutexp reveal-7">
-            <p class="text">Aprés mes quelques projets python en prépa, j'ai très vite pris goût à la programmation.
-            Le DUT Informatique m'as appris les fondamentaux de ce domaine, et m'as permi d'approfondir dans les
-            langages orientés objets et en réseau.</p>
-        </div>
-    </div>
-    <div id="two" class="titlesec reveal-2">
-        <h1>EXPERIENCES</h1>
-    </div>
-    <div id="experience" >
+
+    <div id="experience">
+        <h1 class="titlesec reveal-2">EXPERIENCES</h1>
         <div id="xp">
             <div class="anim reveal-2" >
                 <p>Animateur saisonnier</p>
@@ -96,7 +101,7 @@
             </p>
         </div>
     </div>
-
+</main>
 
 </body>
 </html>
